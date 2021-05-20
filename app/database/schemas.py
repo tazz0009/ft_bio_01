@@ -7,8 +7,11 @@ class BlogBase(BaseModel):
     title: str
     body: str
 
+    class Config():
+        orm_mode = True
 
-class ShowBlog(BlogBase):
+
+class ShowBlog(BaseModel):
     title: str
     body: str
 

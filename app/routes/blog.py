@@ -12,7 +12,7 @@ router = APIRouter(
 get_db = database.get_db
 
 
-@router.get('/', response_model=List[schemas.ShowBlog])
+@router.get('/', response_model=List[schemas.BlogBase])
 def all(db: Session = Depends(get_db)):
     """
     모든 Blog 가져오기 API

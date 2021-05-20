@@ -4,3 +4,6 @@ sqlalchemy
 passlib
 bcrypt
 biopython
+mysql-connector-python
+pymysql
+mysqlclient
